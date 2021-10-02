@@ -34,5 +34,5 @@ Game over. Press q to exit.─────────────────�
 
 ## Requirements
 
-* c++14
+* c++17
 * `libcurses5-dev`

@@ -1,4 +1,4 @@
-CC := clang++-3.8
+CC := clang++
 SRCDIR := src
 BUILDDIR := build
 TARGET := bin/snake
@@ -6,7 +6,7 @@ TARGET := bin/snake
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -g -Wall -std=c++14
+CFLAGS := -g -Wall -std=c++17 -stdlib=libc++
 LIB := -pthread -lncurses
 
 run: $(TARGET)
